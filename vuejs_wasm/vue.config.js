@@ -19,7 +19,7 @@ module.exports = defineConfig({
       )
       .end()
   },
-  publicPath: 'yew_investigation/vuejs_wasm',
+  publicPath: '/yew_investigation/vuejs_wasm',
   devServer: {
     port: 8082,
   },

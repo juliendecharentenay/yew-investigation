@@ -24,9 +24,9 @@
           <div class="flex-1 bg-white p-6 flex flex-col justify-between">
             <div class="flex-1">
               <p class="text-sm font-medium text-indigo-600">
-                <a href="#" class="hover:underline"> JS </a>
+                <a href="/yew_investigation/vuejs/index.html" class="hover:underline"> JS </a>
               </p>
-              <a href="/vuejs/index.html" class="block mt-2">
+              <a href="/yew_investigation/vuejs/index.html" class="block mt-2">
                 <p class="text-xl font-semibold text-gray-900">VueJS</p>
                 <p class="mt-3 text-base text-gray-500">An implementation using VueJS in plain javascipt</p>
               </a>
@@ -38,9 +38,9 @@
           <div class="flex-1 bg-white p-6 flex flex-col justify-between">
             <div class="flex-1">
               <p class="text-sm font-medium text-indigo-600">
-                <a href="#" class="hover:underline"> JS/Rust </a>
+                <a href="/yew_investigation/vuejs_wasm/index.html" class="hover:underline"> JS/Rust </a>
               </p>
-              <a href="#" class="block mt-2">
+              <a href="/yew_investigation/vuejs_wasm/index.html" class="block mt-2">
                 <p class="text-xl font-semibold text-gray-900">VueJS & WebAssembly </p>
                 <p class="mt-3 text-base text-gray-500">An implementation using VueJS for the rendering elements with the calcuation done in Rust/WebAssembly</p>
               </a>
@@ -52,9 +52,9 @@
           <div class="flex-1 bg-white p-6 flex flex-col justify-between">
             <div class="flex-1">
               <p class="text-sm font-medium text-indigo-600">
-                <a href="#" class="hover:underline"> Rust </a>
+                <a href="/yew_investigation/yew/index.html" class="hover:underline"> Rust </a>
               </p>
-              <a href="#" class="block mt-2">
+              <a href="/yew_investigation/yew/index.html" class="block mt-2">
                 <p class="text-xl font-semibold text-gray-900">Yew</p>
                 <p class="mt-3 text-base text-gray-500">A pure Rust implementation using the Yew framework</p>
               </a>
