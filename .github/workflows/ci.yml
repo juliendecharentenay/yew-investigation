@@ -13,7 +13,7 @@ jobs:
     - run: cd www; npm install; npm run build
     - run: cd vuejs; npm install; npm run build
     - run: cd vuejs_wasm; npm install; npm run build
-    - run: cd yew; trunk build --release
+    - run: cd yew; trunk build --release --public-url /yew_investigation/yew
     - run: mkdir yew_investigation
     - run: cp -r www/dist/* yew_investigation
     - run: cp -r vuejs/dist yew_investigation/vuejs

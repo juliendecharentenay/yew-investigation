@@ -44,9 +44,9 @@ impl Component for App {
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="flex justify-center items-center border-b-2 border-gray-100 py-6">
         <nav class="flex space-x-10">
-          <a href="/vuejs/index.html" class="text-base font-medium text-gray-500 hover:text-gray-900">{ "VueJS" }</a>
-          <a href="/vuejs_wasm/index.html" class="text-base font-medium text-gray-500 hover:text-gray-900">{ "VueJS+WebAssembly" }</a>
-          <a href="/yew/index.html" class="text-base font-medium text-gray-500 hover:text-gray-900">{ "Yew" }</a>
+          <a href="/yew_investigation/vuejs/index.html" class="text-base font-medium text-gray-500 hover:text-gray-900">{ "VueJS" }</a>
+          <a href="/yew_investigation/vuejs_wasm/index.html" class="text-base font-medium text-gray-500 hover:text-gray-900">{ "VueJS+WebAssembly" }</a>
+          <a href="/yew_investigation/yew/index.html" class="text-base font-medium text-gray-500 hover:text-gray-900">{ "Yew" }</a>
         </nav>
       </div>
     </div>

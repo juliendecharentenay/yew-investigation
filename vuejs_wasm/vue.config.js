@@ -19,7 +19,7 @@ module.exports = defineConfig({
       )
       .end()
   },
-  publicPath: '/vuejs_wasm',
+  publicPath: 'yew_investigation/vuejs_wasm',
   devServer: {
     port: 8082,
   },
@@ -28,5 +28,6 @@ module.exports = defineConfig({
       asyncWebAssembly: true,
     },
   },
-  transpileDependencies: true
+  transpileDependencies: true,
+  productionSourceMap: false
 })

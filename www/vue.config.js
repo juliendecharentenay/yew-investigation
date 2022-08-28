@@ -1,5 +1,6 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
+  publicPath: '/yew_investigation',
   devServer: {
     proxy: {
       '^/vuejs/':      { target: 'http://locahost:8081/' },
@@ -7,5 +8,6 @@ module.exports = defineConfig({
       '^/yew/':        { target: 'http://locahost:8083/' },
     }
   },
-  transpileDependencies: true
+  transpileDependencies: true,
+  productionSourceMap: false
 })

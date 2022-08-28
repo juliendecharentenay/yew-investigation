@@ -1,8 +1,9 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
-  publicPath: '/vuejs',
+  publicPath: '/yew_investigation/vuejs',
   devServer: {
     port: 8081,
   },
-  transpileDependencies: true
+  transpileDependencies: true,
+  productionSourceMap: false
 })
