@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Preliminaries
+      run: rustup update; 
+    - name: Build 
+      run: cd www; npm install; npm run build
+      run: cd vuejs; npm install; npm run build
+      run: cd vuejs_wasm; npm install; npm run build
+      run: cd yew; trunk build
+      run: mkdir yew_investigation
+      run: cp -r www/dist/* yew_investigation
+      run: cp -r vuejs/dist yew_investigation/vuejs
+      run: cp -r vuejs_wasm/dist yew_investigation/vuejs_wasm
+      run: cp -r yew/dist yew_investigation/yew
+    - uses: actions/upload-artifact@v3
+      with:
+        name: dist
+        path: ./yew_investigation
+
