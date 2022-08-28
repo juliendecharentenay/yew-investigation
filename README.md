@@ -5,6 +5,8 @@ comparison of 3 approaches that calculate a nth term of the Fibonacci
 sequence in VueJS, VueJS/WebAssembly and Yew (WebAssembly). This 
 comparison is used to evalue Yew.
 
+Live version is available at <https://www.charentenay.me/yew_investigation/index.html>.
+
 The directories are as follow:
 * `www` - corresponds to the home page allowing one to select one of the three
 approaches;
@@ -22,7 +24,7 @@ between project - in other words, it is a deliberate choice.
 
 To get it all working, following the instruction to start the webserver in 
 each of the above mentioned directories (instruction listed below), then 
-open your webbrowser and load the url `http://localhost:8080/yew-investigation/index.html`.
+open your webbrowser and load the url `http://localhost:8080/yew_investigation/index.html`.
 
 # `www`
 ## Pre-requisite:
