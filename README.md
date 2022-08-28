@@ -26,7 +26,7 @@ open your webbrowser and load the url `http://localhost:8080/yew-investigation/i
 
 # `www`
 ## Pre-requisite:
-* `npm` from ...
+* `npm` from <https://nodejs.org/en/>
 
 ## Usage
 ```
@@ -46,7 +46,7 @@ npm run build
 
 # `vuejs`
 ## Pre-requisite:
-* `npm` from ...
+* `npm` from <https://nodejs.org/en/>
 
 ## Usage
 ```
@@ -69,7 +69,10 @@ npm run build
 
 # `vuejs_wasm`
 ## Pre-requisite:
-* `npm`
+* `npm` from <https://nodejs.org/en/>
+* `rust` from <https://www.rust-lang.org/tools/install>
+* WebAssembly target: `rustup target add wasm32-unknown-unknown`
+* `wasm-pack` from <https://rustwasm.github.io/wasm-pack/installer/>
 
 ## Usage
 ```
@@ -99,7 +102,9 @@ npm run build
 
 # `yew`
 ## Pre-requisites:
-* ...
+* `rust` from <https://www.rust-lang.org/tools/install>
+* WebAssembly target: `rustup target add wasm32-unknown-unknown`
+* `trunk` utility: `cargo install trunk`
 
 ## Usage
 ```
@@ -108,16 +113,14 @@ trunk serve
 ```
 
 ## Unit testing
-Unit testing is undertaken for the VueJS implementation:
 ```
 cd yew
-npm run test:unit
+cargo test
 ```
 
 ## Build distribution
 ```
 cd yew
-???
+trunk build --release
 ```
-
 
