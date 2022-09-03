@@ -9,10 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - run: npm install -g tailwindcss
     - run: rustup update; rustup target add wasm32-unknown-unknown; cargo install trunk
     - run: cd www; npm install; npm run build
     - run: cd vuejs; npm install; npm run build
     - run: cd vuejs_wasm; npm install; npm run build
+    - run: cd yew; NODE_ENV=production tailwindcss -c ./tailwind.config.js -o ./tailwind.css --minify
     - run: cd yew; trunk build --release --public-url /yew_investigation/yew
     - run: mkdir yew_investigation
     - run: cp -r www/dist/* yew_investigation
